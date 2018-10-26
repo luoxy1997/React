@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./react.js"></script>
+    <script src="./react-dom.js"></script>
+    <script src="http://cdn.bootcss.com/babel-core/5.8.38/browser.min.js"></script>
+</head>
+<body>
+<div id="reactContainer"></div>
+<script type="text/babel">
+    var arr = [
+        <h5>dsds</h5>,
+            <p>dsdsds</p>
+    ]
+    var myStyle = {
+        fontSize:100,
+        color:'green'
+    }
+    var HelloComponent = React.createClass({
+        render:function (){
+            return <h4>vsCode</h4>
+        }
+    });
+    ReactDOM.render(
+            <h1 style = {myStyle}>{arr}</h1>,
+            document.getElementById("reactContainer")
+    );
+</script>
+</body>
+</html>
